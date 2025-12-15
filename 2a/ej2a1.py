@@ -73,14 +73,11 @@ def sum_even_numbers_in_list_do_while(list_numbers):
     total_sum = 0
     i = 0
     while True:
-         
-         if i >= len(list_numbers):
-            break
-         current_number = list_numbers[i]
-
-         if current_number % 2 == 0:
-            total_sum += current_number
+        if list_numbers[i] % 2 == 0:
+            total_sum += list_numbers[i]
         i += 1
+        if i == len(list_numbers):
+            break
     return total_sum
 
 shopping_list = [10, 449, 33, 44, 188, 640]

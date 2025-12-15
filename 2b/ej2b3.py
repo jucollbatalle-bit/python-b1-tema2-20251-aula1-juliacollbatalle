@@ -47,16 +47,14 @@ Exemple:
 """
 
 
-def triangle_area_calculate(
-    base, height):
-    # Write here your code
-    pass
+def triangle_area_calculate(base, height):
+   
+    """
+    Calcula l'area del triangle mitjançant la fórmula trigonometrica convencional. 
+    Per fer-ho, multiplica la base per l'alçada i el resultat el divideixes entre 2.
+    """
+    area = (base * height) / 2 # Aquesta fórmula ens ajuda a calcular el resultat final
+    return area
 
 
-# Si quieres probar tu código, descomenta las siguientes líneas y ejecuta
-# el script
-
-# Si vols provar el teu codi, descomenta les línies següents i executa
-# l'scrip
-
-# print(triangle_area_calculate(33, 45))
+print(triangle_area_calculate(33, 45))
